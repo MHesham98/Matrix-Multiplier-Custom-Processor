@@ -1,2 +1,7 @@
 # Matrix-Multiplier-Custom-Processor
- Implementation of Matrix Multiplier using VHDL with the aid of Multisim and Quartus
+ Implementation of FSM with Datapath Matrix Multiplier using VHDL, a widely used function in Neural Networks and Deep Learning.
+ 
+## Tools used:
+ -VS Code
+ -Multisim
+ -Quartus
