@@ -9,7 +9,7 @@ port (i_rst, j_rst, k_rst, i_ld, j_ld, k_ld, result_rst, result_wr : out std_log
 end matrix_controller;
 
 architecture rtl of matrix_controller is
-  type state_type is (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10);
+  type state_type is (s0,s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12);
   signal current_state : state_type ;
   signal next_state : state_type ;
 begin
@@ -40,6 +40,7 @@ begin
       else
         next_state <= s1;
       end if;
+
     when s1 =>
         i_rst <= '0';
         j_rst <= '0';
@@ -88,6 +89,21 @@ begin
     when s4 =>
 
         i_rst <= '0';
+        j_rst <= '1';
+        k_rst <= '0';
+        i_ld <= '0';
+        j_ld <= '0';
+        k_ld <= '0';
+        result_rst <= '0';
+        result_wr <= '0'; 
+        plus_selector <= "00";
+
+        next_state <= s5;
+
+
+    when s5 =>
+   
+        i_rst <= '0';
         j_rst <= '0';
         k_rst <= '0';
         i_ld <= '0';
@@ -97,12 +113,12 @@ begin
         result_wr <= '0'; 
         plus_selector <= "00";
         if (j_sig = '1') then
-        next_state <= s5;
+        next_state <= s6;
         else
-        next_state <= s10;
+        next_state <= s12;
         end if;
 
-    when s5 =>
+    when s6 =>
 
         i_rst <= '0';
         j_rst <= '0';
@@ -114,10 +130,28 @@ begin
         result_wr <= '1'; 
         plus_selector <= "00";
 
-        next_state <= s6;
+        next_state <= s7;
 
 
-    when s6 =>
+     
+    when s7 =>
+
+        i_rst <= '0';
+        j_rst <= '0';
+        k_rst <= '1';
+        i_ld <= '0';
+        j_ld <= '0';
+        k_ld <= '0';
+        result_rst <= '0';
+        result_wr <= '0'; 
+        plus_selector <= "00";
+
+        next_state <= s8;
+
+
+
+      
+    when s8 =>
 
         i_rst <= '0';
         j_rst <= '0';
@@ -129,12 +163,12 @@ begin
         result_wr <= '0'; 
         plus_selector <= "00";
         if (k_sig = '1') then
-        next_state <= s7;
-        else
         next_state <= s9;
+        else
+        next_state <= s11;
         end if;
-     
-    when s7 =>
+
+    when s9 =>
 
         i_rst <= '0';
         j_rst <= '0';
@@ -146,10 +180,9 @@ begin
         result_wr <= '1'; 
         plus_selector <= "00";
 
-        next_state <= s8;
+        next_state <= s10;
 
-      
-    when s8 =>
+    when s10 =>
 
         i_rst <= '0';
         j_rst <= '0';
@@ -161,9 +194,11 @@ begin
         result_wr <= '0'; 
         plus_selector <= "10";
 
-        next_state <= s6;
+        next_state <= s8;
 
-    when s9 =>
+       
+
+    when s11 =>
 
         i_rst <= '0';
         j_rst <= '0';
@@ -175,9 +210,9 @@ begin
         result_wr <= '0'; 
         plus_selector <= "01";
 
-        next_state <= s4;
- 
-    when s10 =>
+        next_state <= s5;
+
+    when s12 =>
 
         i_rst <= '0';
         j_rst <= '0';

@@ -11,7 +11,7 @@ entity result_16bit is
     end result_16bit;
 
     architecture rtl of result_16bit is
-        type ram_type is array (0 to 2, 0 to 2) of --array 3x3
+        type ram_type is array (0 to 3, 0 to 3) of --array 3x3
         std_logic_vector(15 downto 0);
         signal program: ram_type;
         begin

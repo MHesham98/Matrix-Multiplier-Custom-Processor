@@ -28,12 +28,17 @@ void multiply_while(int mat1[3][4], int mat2[4][3], int res[3][3])
 
     while(i<3)
     {
+        j = 0;
+
         while(j<3)
         {
             res[i][j] = 0;
 
+            k = 0;
+
             while(k<4)
             {
+
                 res[i][j] += mat1[i][k] * mat2[k][j];
                 
                 k++;
