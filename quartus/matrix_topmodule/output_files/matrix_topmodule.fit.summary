@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sun Oct 13 18:32:24 2019
+Fitter Status : Successful - Sun Oct 13 19:36:42 2019
 Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 Revision Name : matrix_topmodule
 Top-level Entity Name : matrix_topmodule
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 0 / 22,320 ( 0 % )
-    Total combinational functions : 0 / 22,320 ( 0 % )
-    Dedicated logic registers : 0 / 22,320 ( 0 % )
-Total registers : 0
-Total pins : 3 / 154 ( 2 % )
+Total logic elements : 390 / 22,320 ( 2 % )
+    Total combinational functions : 286 / 22,320 ( 1 % )
+    Dedicated logic registers : 293 / 22,320 ( 1 % )
+Total registers : 293
+Total pins : 35 / 154 ( 23 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )

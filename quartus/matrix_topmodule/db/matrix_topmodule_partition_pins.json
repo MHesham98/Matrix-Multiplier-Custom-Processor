@@ -2,7 +2,148 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "result[0]",
+					"strict" : false
+				},
+				{
+					"name" : "result[1]",
+					"strict" : false
+				},
+				{
+					"name" : "result[2]",
+					"strict" : false
+				},
+				{
+					"name" : "result[3]",
+					"strict" : false
+				},
+				{
+					"name" : "result[4]",
+					"strict" : false
+				},
+				{
+					"name" : "result[5]",
+					"strict" : false
+				},
+				{
+					"name" : "result[6]",
+					"strict" : false
+				},
+				{
+					"name" : "result[7]",
+					"strict" : false
+				},
+				{
+					"name" : "result[8]",
+					"strict" : false
+				},
+				{
+					"name" : "result[9]",
+					"strict" : false
+				},
+				{
+					"name" : "result[10]",
+					"strict" : false
+				},
+				{
+					"name" : "result[11]",
+					"strict" : false
+				},
+				{
+					"name" : "result[12]",
+					"strict" : false
+				},
+				{
+					"name" : "result[13]",
+					"strict" : false
+				},
+				{
+					"name" : "result[14]",
+					"strict" : false
+				},
+				{
+					"name" : "result[15]",
+					"strict" : false
+				},
+				{
+					"name" : "i[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i[7]",
+					"strict" : false
+				},
+				{
+					"name" : "j[0]",
+					"strict" : false
+				},
+				{
+					"name" : "j[1]",
+					"strict" : false
+				},
+				{
+					"name" : "j[2]",
+					"strict" : false
+				},
+				{
+					"name" : "j[3]",
+					"strict" : false
+				},
+				{
+					"name" : "j[4]",
+					"strict" : false
+				},
+				{
+					"name" : "j[5]",
+					"strict" : false
+				},
+				{
+					"name" : "j[6]",
+					"strict" : false
+				},
+				{
+					"name" : "j[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

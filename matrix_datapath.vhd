@@ -6,7 +6,10 @@ entity matrix_datapath is
   port (
     clk, i_rst, j_rst, k_rst, i_ld, j_ld, k_ld, result_rst, result_wr : in std_logic;
     i_sig, j_sig, k_sig : out std_logic;
-    plus_selector : in std_logic_vector(1 downto 0)
+    plus_selector : in std_logic_vector(1 downto 0);
+    current_result : out std_logic_vector(15 downto 0);
+    i : out std_logic_vector(7 downto 0);
+    j : out std_logic_vector(7 downto 0)
   ) ;
 end matrix_datapath;
 
@@ -90,6 +93,10 @@ architecture struct of matrix_datapath is
       
 
 begin
+
+  current_result <= result_output;
+  i <= i_out;
+  j <= j_out;
 
     u0 : reg_8bit port map (clk, i_rst, i_ld, plus_one_output, i_out); -- i
     u1 : reg_8bit port map (clk, j_rst, j_ld, plus_one_output, j_out); -- j
