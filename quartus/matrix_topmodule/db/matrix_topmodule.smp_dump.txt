@@ -1,0 +1,16 @@
+
+State Machine - |matrix_topmodule|matrix_controller:u1|current_state
+Name current_state.s12 current_state.s11 current_state.s10 current_state.s9 current_state.s8 current_state.s7 current_state.s6 current_state.s5 current_state.s4 current_state.s3 current_state.s2 current_state.s1 current_state.s0 
+current_state.s0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state.s1 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state.s2 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state.s3 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state.s4 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state.s5 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state.s6 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state.s7 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state.s8 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state.s9 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state.s10 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state.s11 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state.s12 1 0 0 0 0 0 0 0 0 0 0 0 1 
